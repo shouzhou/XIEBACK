@@ -59,6 +59,13 @@
 #define  LED_WEIGHT_2 	4
 #define  LED_WEIGHT_1 	5
 
+//#define  LED_WEIGHT_6 	2
+//#define  LED_WEIGHT_5 	3
+//#define  LED_WEIGHT_4 	4
+//#define  LED_WEIGHT_3 	5
+//#define  LED_WEIGHT_2 	6
+//#define  LED_WEIGHT_1 	7
+
 //LED 符号 区显 存分布
 #define  LED_LABLE_1 6
 //#define  LED_LABLE_1 15
@@ -74,6 +81,18 @@
 #define  LCD_WEIGHT_2 	4
 #define  LCD_WEIGHT_1 	5
 #define  LCD_WEIGHT_0 	6
+
+
+//#define  LCD_WEIGHT_6 	2
+//#define  LCD_WEIGHT_5 	3
+//#define  LCD_WEIGHT_4 	4
+//#define  LCD_WEIGHT_3 	5
+//#define  LCD_WEIGHT_2 	6
+//#define  LCD_WEIGHT_1 	7
+//#define  LCD_WEIGHT_0 	0
+
+
+
 
 //LCD 符号 区显 存分布
 //#define  LCD_LABLE_1 	15

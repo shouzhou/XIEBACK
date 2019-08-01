@@ -225,7 +225,7 @@ void dsp_updata(unsigned char mode)
 			#endif
 			//--条件编译: 显示位转换 -- end --
 			}
-			led_unit_write(temp);							
+									
 			//led_unit_write(Dsp_buf[j]);
 		}
 		delay_10u();
@@ -309,23 +309,24 @@ void dsp_updata(unsigned char mode)
 	//---传送数据---
 		for(j=0;j<8;j++)	
 		{				
-			unsigned char num,temp;
-			temp = 0;
-			for(temp=0,num=0;num<8;num++)
-			{
-				temp <<= 1;
-			//--条件编译: 显示位转换 -- begin --
-			#ifdef DSP_BIT_CHX_EN
-				if(Dsp_buf[Led_buf_ex[num]] & Lcd2led_table[j])
-					temp++;	
-			#else
-				if(Dsp_buf[num] & Lcd2led_table[j])
-					temp++;			
-			#endif
-			//--条件编译: 显示位转换 -- end --
-			}
-			led_unit_write(temp);								
-			//led_unit_write(Dsp_buf[j]);	
+//			unsigned char num,temp;
+//			temp = 0;
+//			for(temp=0,num=0;num<8;num++)
+//			{
+//				temp <<= 1;
+//			//--条件编译: 显示位转换 -- begin --
+//			#ifdef DSP_BIT_CHX_EN
+//				if(Dsp_buf[Led_buf_ex[num]] & Lcd2led_table[j])
+//					temp++;	
+//			#else
+//				if(Dsp_buf[num] & Lcd2led_table[j])
+//					temp++;			
+//			#endif
+//			//--条件编译: 显示位转换 -- end --
+//			}
+			//led_unit_write(temp);						
+//     以上是共阳驱动 代码 共阴驱动 就下面一句话			
+			led_unit_write(Dsp_buf[j]);	
 		}
 		_nop_();
 		LED_DIN = 0;
