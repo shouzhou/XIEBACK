@@ -66,7 +66,7 @@
 //------------------------------------------------------------------
 
 //控制-"./_dsp_driver/display_driver.c" 中使用的LCD 和 LED驱动
-#define LCD_DRIVER_1621		
+//#define LCD_DRIVER_1621		
 #define LED_DRIVER_1640
 //#define LED_DRIVER_6932
 //#define LED_DRIVER_1616
